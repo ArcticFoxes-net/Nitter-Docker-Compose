@@ -15,7 +15,7 @@ services:
       - redis
     healthcheck:
       test: wget -nv --tries=1 --spider http://127.0.0.1:8080/Jack/status/20 || exit 1
-      interval: 30s
+      interval: 15s
       timeout: 5s
       retries: 2
     user: "998:998"
@@ -36,7 +36,7 @@ services:
       - redis
     healthcheck:
       test: redis-cli ping
-      interval: 30s
+      interval: 15s
       timeout: 5s
       retries: 2
     user: "999:1000"
