@@ -7,7 +7,7 @@ services:
     container_name: nitter
     restart: unless-stopped
     volumes:
-      - ./nitter.conf:/src/nitter.conf:Z
+      - ./nitter.conf:/src/nitter.conf:Z,ro
     networks:
       - nitter
       - redis
