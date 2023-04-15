@@ -1,4 +1,4 @@
-# Gitea-Docker-Compose
+# Nitter-Docker-Compose
 Nitter Docker-Compose
 
 1. Update `docker-compose.yml`
